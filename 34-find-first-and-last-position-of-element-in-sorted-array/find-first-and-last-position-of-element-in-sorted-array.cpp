@@ -4,7 +4,7 @@ public:
         vector<int>vec;
         int lb = lower_bound(nums.begin(),nums.end(),target)-nums.begin();
         int ub = upper_bound(nums.begin(),nums.end(),target)-nums.begin();
-        if(lb == ub || nums.size()==0) 
+        if(lb == ub ) 
         {
             vector<int>v ={-1,-1};
             return v;
