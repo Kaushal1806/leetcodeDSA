@@ -13,14 +13,18 @@ public:
             {
                 maxl = max(maxl,r-l+1);
             }
+            // else
+            // {
+            //     while(zcnt>k)
+            //     {
+            //         if(nums[l]==0)zcnt--;
+            //         l++;
+            //     }
+            // }
             else
             {
-                while(zcnt>k)
-                {
-                    if(nums[l]==0)zcnt--;
-                    l++;
-                }
-                
+                if(nums[l]==0)zcnt--;
+                l++;
             }
             r++;
         } 
